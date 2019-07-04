@@ -1,0 +1,35 @@
+.header{
+    grid-area:header;
+}
+
+.menu{
+    grid-area:menu;
+}
+
+.main{
+    grid-area:main;
+}
+
+.footer{
+    grid-area:footer;
+}
+
+.grid-container{
+    display: grid;
+    grid-template:
+    'header header'
+    'menu main'
+    'footer footer';
+    grid-gap: 5px;
+    background-color: green;
+    padding: 5px;
+    grid-template-rows:5vh 25vh 5vh;
+    grid-template-columns:15vw 75vw;
+}
+
+.grid-container > div{
+    background-color: greenyellow;
+    text-align: center;
+    padding: 10px;
+    font-size:30px;
+}
